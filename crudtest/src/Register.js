@@ -27,7 +27,7 @@ const Register = () =>{
     //Criei uma documento php para não dar erro
     axios.post('http://localhost/php-react/register-login-php-simple/insert.php', sendData)
     .then((result)=>{
-      if(result.data.Status == 'Invalid')
+      if(result.data.Status === 'Invalid')
         {alert('Usuário inválido');}
       else
        { history(`/dashboard`);}
