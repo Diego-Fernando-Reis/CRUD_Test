@@ -37,7 +37,7 @@ const Register = () =>{
     <div className="main-box">
       <form onSubmit={submitForm}>
       <div className="row">
-        <div><h1>Register</h1></div>
+        <div><h1>Cadastro</h1></div>
       </div>
       <div className="row">
         <div>Nome</div>
