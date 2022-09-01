@@ -46,7 +46,7 @@ const Login = () =>{
           <input type='password' name='password' onChange={handleChange} value={user.password}/>
         </div>
         <div className="row">
-          <input type='submit' name='submit' className="btn" value='Please Login'/>
+          <input type='submit' name='submit' className="btn" value='Entrar'/>
         </div>
       </div>
     </form>

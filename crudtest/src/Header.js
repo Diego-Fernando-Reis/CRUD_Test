@@ -10,24 +10,22 @@ const Header = ()=>{
 
   },[])
   return(
-    <nav>
-      <a href="/">Navbar w/ text</a>
-      <div>
+    <nav id='menu'>
+      <a>Login e Cadastro</a>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" id='link'>Home</Link>
           </li>
           <li>
-            <Link to="/register">Register</Link>
+            <Link to="/register" id='link'>Register</Link>
           </li>
           <li>
-          <Link to="/login">Login</Link>
+          <Link to="/login" id='link'>Login</Link>
           </li>
         </ul>
         <span class="navbar-text">
           Welcome: {user}
         </span>
-      </div>
     </nav>
   )
 }

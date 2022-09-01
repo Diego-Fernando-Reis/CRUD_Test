@@ -16,6 +16,8 @@ const Register = () =>{
     setData({ ...data, [e.target.name]: e.target.value});
   }
 
+  console.log(data.cpf);
+
   const submitForm = (e) => {
     e.preventDefault();
     const sendData = {
@@ -65,7 +67,7 @@ const Register = () =>{
       <div className="row">
         
         <div>
-          <input type='submit' name='submit' value='Register' className="btn"/>
+          <input type='submit' name='submit' value='Cadastrar' className="btn"/>
         </div>
       </div>
       </form>
