@@ -1,6 +1,14 @@
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Link} from 'react-router-dom';
+import {useState, useEffect} from 'react';
 
 const Header = ()=>{
+  const [user, setUser] = useState('');
+  useEffect(()=>{
+    var userName = localStorage.getItem('nome');
+
+    setUser(userName);
+
+  },[])
   return(
     <nav>
       <a href="/">Navbar w/ text</a>
@@ -17,7 +25,7 @@ const Header = ()=>{
           </li>
         </ul>
         <span class="navbar-text">
-          Welcome:
+          Welcome: {user}
         </span>
       </div>
     </nav>
