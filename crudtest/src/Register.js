@@ -1,6 +1,8 @@
 import { useState } from "react";
 import {axios} from 'axios'
 import {useNavigate} from 'react-router-dom'
+import MaskedInput from "./MaskedInput";
+
 
 const Register = () =>{
   let history = useNavigate();
@@ -49,7 +51,7 @@ const Register = () =>{
       <div className="row">
         <div>CPF</div>
         <div>
-          <input type='text' name='cpf' className="form-control" onChange={handleChange} value={data.cpf}/>
+          <MaskedInput  onChange={handleChange} value={data.cpf}/>
         </div>
       </div>
 
